@@ -21,12 +21,12 @@ public class Question2_1 {
 	public static void main(String[] args) {
 		// 出力パターン設定(大文字のHは0〜23時間表記)
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("H時m分s秒");
-		// 時間を取得
-		int hour = Integer.parseInt(args[0]);
-		// 分を取得
-		int minute = Integer.parseInt(args[1]);
-		// 秒を取得
-		int second = Integer.parseInt(args[2]);
+		// 時間を設定
+		int hour = 15;
+		// 分を設定
+		int minute = 4;
+		// 秒を設定
+		int second = 59;
 		// LocalTimeを生成
 		LocalTime localTime = LocalTime.of(hour, minute, second);
 		// 進める前表示

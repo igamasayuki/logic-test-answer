@@ -18,11 +18,11 @@ package question;
  */
 public class Question3 {
 	public static void main(String[] args) {
-		int inputYear = Integer.parseInt(args[0]);
-		int century = inputYear / 100;
-		if (inputYear % 100 != 0) {
+		int seireki = 2000;
+		int century = seireki / 100;
+		if (seireki % 100 != 0) {
 			century++;
 		}
-		System.out.println(inputYear + "年は" + century + "世紀です");
+		System.out.println(seireki + "年は" + century + "世紀です");
 	}
 }

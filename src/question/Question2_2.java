@@ -22,14 +22,14 @@ public class Question2_2 {
 		SimpleDateFormat sdf = new SimpleDateFormat("H時m分s秒");
 		Calendar calendar = Calendar.getInstance();
 		// 時間をセット
-		int hourOfDay = Integer.parseInt(args[0]);
+		int hourOfDay = 15;
 		calendar.set(Calendar.HOUR_OF_DAY, hourOfDay);
 		// 分をセット
-		int minute = Integer.parseInt(args[1]);
+		int minute = 4;
 		calendar.set(Calendar.MINUTE, minute);
 		// 秒をセット
-		int secound = Integer.parseInt(args[2]);
-		calendar.set(Calendar.SECOND, secound);
+		int second = 59;
+		calendar.set(Calendar.SECOND, second);
 		// 表示
 		System.out.print(sdf.format(calendar.getTime()));
 		System.out.print("の1秒後は");

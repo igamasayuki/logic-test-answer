@@ -27,9 +27,9 @@ import java.time.LocalDate;
  */
 public class Question4_2 {
 	public static void main(String[] args) {
-		int inputYear = Integer.parseInt(args[0]);
-		System.out.print(inputYear + "年は");
-		if (isLeapYear(inputYear)) {
+		int seireki = 2000;
+		System.out.print(seireki + "年は");
+		if (isLeapYear(seireki)) {
 			System.out.println("うるう年です。");
 		} else {
 			System.out.println("うるう年ではありません。");
